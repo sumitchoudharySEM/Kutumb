@@ -516,7 +516,6 @@ const Dashboard = () => {
                                 Settings
                               </a>
                             </Link>
-
                             <div className="flex pl-4 rounded-[3px] text-[14px] items-center text-[rgba(0,0,0,0.45)] hover:bg-[#6262621f] py-2 cursor-pointer transition-all delay-500" onClick={logout}>
                               <RiLogoutCircleLine className="mr-2" size={20} />{" "}
                               Log Out

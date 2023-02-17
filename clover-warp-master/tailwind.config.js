@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -13,6 +14,9 @@ module.exports = {
     "./pages/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'serif': ['Manrope'],
+    },
     screens: {
       "st": { max: "750px" },
       "mmd": {max: "640px"},

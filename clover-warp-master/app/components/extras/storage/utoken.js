@@ -3,7 +3,7 @@ import { Web3Storage } from "web3.storage";
 
 export const makeStorageClient = (token) => {
     return new Web3Storage({
-        token
+        token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjoweDU2M0Y1QmY4Qzc1ODUyMDNjYjI1N2U1ZGMzNTc0Q0RFZjNkQTQ3MjAiLCJpc3MiOiJ3ZWIzLXN0b3JhZ2UiLCJpYXQiOjE2NzY2NDkwMDM4NzIsIm5hbWUiOiJLdXR1bWIifQ.atu2QcpoeMhLn32zYzWX-Rl-kg4Yrvt3__aJPSIrAvk"
     });
 };
 
