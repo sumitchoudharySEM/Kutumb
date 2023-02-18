@@ -375,9 +375,9 @@ const Dashboard = () => {
                       <FaRegClock className="mr-2" size={16} /> Recents
                     </div>
 
-                    <div className="flex pl-4 text-[14px] border-l-transparent items-center text-[rgba(0,0,0,0.45)]  hover:text-[#262626] py-2 cursor-pointer transition-all delay-500 hover:bg-[#bfbfbfe1] hover:border-l-[#5F5F5F] border-l-solid border-l-2 ">
+                     <div className="flex pl-4 text-[14px] border-l-transparent items-center text-[rgba(0,0,0,0.45)]  hover:text-[#262626] py-2 cursor-pointer transition-all delay-500 hover:bg-[#bfbfbfe1] hover:border-l-[#5F5F5F] border-l-solid border-l-2 ">
                       <FaTrash className="mr-2" size={16} /> Trash
-                    </div>
+                    </div> 
                   </div>
                 </div>
 
