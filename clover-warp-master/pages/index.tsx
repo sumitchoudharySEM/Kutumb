@@ -22,6 +22,11 @@ import { ethers } from 'ethers';
 import { balanceABI } from '../app/components/extras/abi';
 import { notifications } from '../app/components/extras/storage/init';
 
+import myService1 from '../app/assets/img/service_1.jpeg';
+import myService2 from '../app/assets/img/service_2.jpeg';
+import myService3 from '../app/assets/img/service_3.jpeg';
+import myService4 from '../app/assets/img/service_4.jpeg';
+
 // 0x74367351f1a6809ced9cc70654c6bf8c2d1913c9;
 const contractAddress: string = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 const abi:any = contract.abi;
@@ -519,165 +524,29 @@ const Home: NextPage = () => {
                 <div className="cs-main_header_center">
                   <div className="cs-nav cs-primary_font cs-medium">
                     <ul className="cs-nav_list">
-                      <li className="menu-item-has-children cs-mega_menu">
+                      <li>
                         <a href="index.html">Home</a>
-                        <ul className="cs-mega_wrapper">
-                          <li>
-                            <ul>
-                              <li>
-                                <a href="index.html" className="cs-nav_list_img">
-                                  <img src="assets/img/demo/main-home.jpeg" alt="" />
-                                </a>
-                                <a href="index.html">Main Home</a>
-                              </li>
-                              <li>
-                                <a href="showcase-portfolio.html" className="cs-nav_list_img">
-                                  <img src="assets/img/demo/showcase.jpeg" alt="" />
-                                </a>
-                                <a href="showcase-portfolio.html">Showcase Portfolio</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <ul>
-                              <li>
-                                <a href="photography-agency.html" className="cs-nav_list_img">
-                                  <img src="assets/img/demo/photography-agency.jpeg" alt="" />
-                                </a>
-                                <a href="photography-agency.html">Photography Agency</a>
-                              </li>
-                              <li>
-                                <a href="case-study-showcase.html" className="cs-nav_list_img">
-                                  <img src="assets/img/demo/case_study_showcase.jpeg" alt="" />
-                                </a>
-                                <a href="case-study-showcase.html">Case Study Showcase</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <ul>
-                              <li>
-                                <a href="creative-portfolio.html" className="cs-nav_list_img">
-                                  <img src="assets/img/demo/portfolio.jpeg" alt="" />
-                                </a>
-                                <a href="creative-portfolio.html">Creative Portfolio</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <ul>
-                              <li>
-                                <a href="digital-agency.html" className="cs-nav_list_img">
-                                  <img src="assets/img/demo/digital-agency.jpeg" alt="" />
-                                </a>
-                                <a href="digital-agency.html">Digital Agency</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <ul>
-                              <li>
-                                <a href="marketing-agency.html" className="cs-nav_list_img">
-                                  <img src="assets/img/demo/marketing.jpeg" alt="" />
-                                </a>
-                                <a href="marketing-agency.html">Marketing Agency</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <ul>
-                              <li>
-                                <a href="freelancer-agency.html" className="cs-nav_list_img">
-                                  <img src="assets/img/demo/freelancer-agency.jpeg" alt="" />
-                                  <span className="cs-header_badge">New</span>
-                                </a>
-                                <a href="freelancer-agency.html">Freelancing Agency</a>
-                              </li>
-                            </ul>
-                          </li>
-                          <li>
-                            <ul>
-                              <li>
-                                <a href="https://arino-html-rtl.vercel.app/" target="_blank" className="cs-nav_list_img">
-                                  <img src="assets/img/demo/rtl.jpeg" alt="" />
-                                  <span className="cs-header_badge">New</span>
-                                </a>
-                                <a href="https://arino-html-rtl.vercel.app/" target="_blank">RTL Demo</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
                       </li>
                       <li>
                         <a href="about.html">About</a>
                       </li>
-                      <li className="menu-item-has-children">
-                        <a href="service.html">Services</a>
-                        <ul>
-                          <li>
-                            <a href="service.html">Services</a>
-                          </li>
-                          <li>
-                            <a href="service-details.html">Service Details</a>
-                          </li>
-                        </ul>
+                      <li>
+                      <a href="contact.html">Contact</a>
                       </li>
-                      <li className="menu-item-has-children">
-                        <a href="portfolio.html">Portfolio</a>
-                        <ul>
-                          <li>
-                            <a href="portfolio.html">Portfolio</a>
-                          </li>
-                          <li>
-                            <a href="portfolio-details.html">Portfolio Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a href="blog.html">Blog</a>
-                        <ul>
-                          <li>
-                            <a href="blog.html">Blog</a>
-                          </li>
-                          <li>
-                            <a href="blog-details.html">Blog Details</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li className="menu-item-has-children">
-                        <a href="#">Pages</a>
-                        <ul>
-                          <li>
-                            <a href="contact.html">Contact</a>
-                          </li>
-                          <li>
-                            <a href="team.html">Team</a>
-                          </li>
-                          <li>
-                            <a href="team-details.html">Team Details</a>
-                          </li>
-                          <li>
-                            <a href="case-study.html">Case Study Details</a>
-                          </li>
-                          <li>
-                            <a href="faq.html">FAQ</a>
-                          </li>
-                        </ul>
-                      </li>
+                      
                     </ul>
                   </div>
                 </div>
                 <div className="cs-main_header_right">
-                  <div className="cs-toolbox">
-                    <span className="cs-icon_btn">
-                      <span className="cs-icon_btn_in">
-                        <span />
-                        <span />
-                        <span />
-                        <span />
-                      </span>
-                    </span>
-                  </div>
+                <Button
+                  onClick={login}
+                  style={{
+                    fontFamily: "Poppins",
+                  }}
+                  className="!py-4 !px-8 rounded-lg !capitalize !font-semibold !text-xl !text-white !bg-[#1891fe]"
+                >
+                  Authenticate
+                </Button>
                 </div>
               </div>
             </div>
@@ -766,12 +635,15 @@ const Home: NextPage = () => {
               <h1 className="cs-hero_title wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s"> Creativity In <br />Our Blood Line </h1>
               <div className="cs-hero_info">
                 <div>
-                  <a href="contact.html" className="cs-text_btn">
-                    <span>Get a Quote</span>
-                    <svg width={26} height={12} viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
-                    </svg>
-                  </a>
+                <Button
+                  onClick={() => setOpen(true)}
+                  style={{
+                    fontFamily: "Poppins",
+                  }}
+                  className="!py-4 !px-8 rounded-lg !capitalize !font-semibold !text-xl !text-white !bg-[#1891fe]"
+                >
+                  Register DAO
+                </Button>
                 </div>
                 <div>
                   <div className="cs-hero_subtitle"> We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future. </div>
@@ -793,8 +665,6 @@ const Home: NextPage = () => {
           <a href="#service" className="cs-down_btn" />
         </div>
         {/* End Hero */}
-        
-        {/* End FunFact */}
         {/* Start Service Section */}
         <section id="service">
           <div className="cs-height_150 cs-height_lg_80" />
@@ -819,8 +689,8 @@ const Home: NextPage = () => {
                   <div className="col-lg-3 col-sm-6 cs-hidden_mobile" />
                   <div className="col-lg-3 col-sm-6">
                     <div className="cs-hobble">
-                      <a href="service-details.html" className="cs-card cs-style1 cs-hover_layer1">
-                        <img src="assets/img/service_1.jpeg" alt="Service" />
+                      <a href="" className="cs-card cs-style1 cs-hover_layer1">
+                        <Image src={myService1} alt="Service" />
                         <div className="cs-card_overlay" />
                         <div className="cs-card_info">
                           <span className="cs-hover_layer3 cs-accent_bg" />
@@ -834,7 +704,7 @@ const Home: NextPage = () => {
                   <div className="col-lg-3 col-sm-6">
                     <div className="cs-hobble">
                       <a href="service-details.html" className="cs-card cs-style1 cs-hover_layer1">
-                        <img src="assets/img/service_2.jpeg" alt="Service" />
+                      <Image src={myService2} alt="Service" />
                         <div className="cs-card_overlay" />
                         <div className="cs-card_info">
                           <span className="cs-hover_layer3 cs-accent_bg" />
@@ -847,7 +717,7 @@ const Home: NextPage = () => {
                   <div className="col-lg-3 col-sm-6">
                     <div className="cs-hobble">
                       <a href="service-details.html" className="cs-card cs-style1 cs-hover_layer1">
-                        <img src="assets/img/service_3.jpeg" alt="Service" />
+                      <Image src={myService3} alt="Service" />
                         <div className="cs-card_overlay" />
                         <div className="cs-card_info">
                           <span className="cs-hover_layer3 cs-accent_bg" />
@@ -861,7 +731,7 @@ const Home: NextPage = () => {
                   <div className="col-lg-3 col-sm-6">
                     <div className="cs-hobble">
                       <a href="service-details.html" className="cs-card cs-style1 cs-hover_layer1">
-                        <img src="assets/img/service_4.jpeg" alt="Service" />
+                      <Image src={myService4} alt="Service" />
                         <div className="cs-card_overlay" />
                         <div className="cs-card_info">
                           <span className="cs-hover_layer3 cs-accent_bg" />
@@ -880,109 +750,6 @@ const Home: NextPage = () => {
         </section>
         {/* End Service Section */}
         
-        {/* Start Awards Text */}
-        <section className="cs-shape_wrap_2">
-          <div className="cs-shape_2">
-            <div />
-          </div>
-          <div className="container">
-            <div className="cs-slider cs-style1 cs-gap-24">
-              <div className="cs-slider_left">
-                <div className="cs-section_heading cs-style1">
-                  <h3 className="cs-section_subtitle wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s"> Our Awards </h3>
-                  <h2 className="cs-section_title">We get multiple awards</h2>
-                </div>
-                <div className="cs-height_45 cs-height_lg_20" />
-                <div className="cs-slider_arrows cs-style1 cs-primary_color">
-                  <div className="cs-left_arrow cs-center">
-                    <svg width={26} height={13} viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.469791 5.96967C0.176899 6.26256 0.176899 6.73744 0.469791 7.03033L5.24276 11.8033C5.53566 12.0962 6.01053 12.0962 6.30342 11.8033C6.59632 11.5104 6.59632 11.0355 6.30342 10.7426L2.06078 6.5L6.30342 2.25736C6.59632 1.96447 6.59632 1.48959 6.30342 1.1967C6.01053 0.903806 5.53566 0.903806 5.24276 1.1967L0.469791 5.96967ZM26.0001 5.75L1.00012 5.75V7.25L26.0001 7.25V5.75Z" fill="currentColor" />
-                    </svg>
-                  </div>
-                  <div className="cs-right_arrow cs-center">
-                    <svg width={26} height={13} viewBox="0 0 26 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M25.5305 7.03033C25.8233 6.73744 25.8233 6.26256 25.5305 5.96967L20.7575 1.1967C20.4646 0.903806 19.9897 0.903806 19.6968 1.1967C19.4039 1.48959 19.4039 1.96447 19.6968 2.25736L23.9395 6.5L19.6968 10.7426C19.4039 11.0355 19.4039 11.5104 19.6968 11.8033C19.9897 12.0962 20.4646 12.0962 20.7575 11.8033L25.5305 7.03033ZM0.00012207 7.25H25.0001V5.75H0.00012207V7.25Z" fill="currentColor" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <div className="cs-slider_right">
-                <div className="cs-slider_container" data-autoplay={0} data-loop={1} data-speed={600} data-center={0} data-slides-per-view="responsive" data-xs-slides={1} data-sm-slides={2} data-md-slides={2} data-lg-slides={2} data-add-slides={2}>
-                  <div className="cs-slider_wrapper">
-                    <div className="cs-slide">
-                      <div className="cs-time_line cs-style1">
-                        <h3 className="cs-accent_color">2019</h3>
-                        <h2>Google awards</h2>
-                        <p>Website of the day</p>
-                        <p>Mobile exelence</p>
-                      </div>
-                      <div className="cs-height_40 cs-height_lg_30" />
-                      <div className="cs-time_line cs-style1">
-                        <h3 className="cs-accent_color">2021</h3>
-                        <h2>CSS awards design</h2>
-                        <p>Honorable mention</p>
-                        <p>Desktop exelence</p>
-                      </div>
-                    </div>
-                    {/* .cs-slide */}
-                    <div className="cs-slide">
-                      <div className="cs-time_line cs-style1">
-                        <h3 className="cs-accent_color">2020</h3>
-                        <h2>New technology innovation</h2>
-                        <p>Honorable mention</p>
-                        <p>Desktop exelence</p>
-                      </div>
-                      <div className="cs-height_40 cs-height_lg_30" />
-                      <div className="cs-time_line cs-style1">
-                        <h3 className="cs-accent_color">2022</h3>
-                        <h2>UI/UX design of the month</h2>
-                        <p>Website of the day</p>
-                        <p>Mobile exelence</p>
-                      </div>
-                    </div>
-                    {/* .cs-slide */}
-                    <div className="cs-slide">
-                      <div className="cs-time_line cs-style1">
-                        <h3 className="cs-accent_color">2019</h3>
-                        <h2>Google awards</h2>
-                        <p>Website of the day</p>
-                        <p>Mobile exelence</p>
-                      </div>
-                      <div className="cs-height_40 cs-height_lg_30" />
-                      <div className="cs-time_line cs-style1">
-                        <h3 className="cs-accent_color">2021</h3>
-                        <h2>CSS awards design</h2>
-                        <p>Honorable mention</p>
-                        <p>Desktop exelence</p>
-                      </div>
-                    </div>
-                    {/* .cs-slide */}
-                    <div className="cs-slide">
-                      <div className="cs-time_line cs-style1">
-                        <h3 className="cs-accent_color">2020</h3>
-                        <h2>New technology innovation</h2>
-                        <p>Honorable mention</p>
-                        <p>Desktop exelence</p>
-                      </div>
-                      <div className="cs-height_40 cs-height_lg_30" />
-                      <div className="cs-time_line cs-style1">
-                        <h3 className="cs-accent_color">2022</h3>
-                        <h2>UI/UX design of the month</h2>
-                        <p>Website of the day</p>
-                        <p>Mobile exelence</p>
-                      </div>
-                    </div>
-                    {/* .cs-slide */}
-                  </div>
-                </div>
-                {/* .cs-slider_container */}
-                <div className="cs-pagination cs-style1 cs-hidden_desktop" />
-              </div>
-            </div>
-            {/* .cs-slider */}
-          </div>
-        </section>
-        {/* End Awards Text */}
         <div className="cs-height_130 cs-height_lg_70" />
         
         <div className="cs-height_145 cs-height_lg_80" />
@@ -1630,33 +1397,6 @@ const Home: NextPage = () => {
                 {loginError}
               </Alert>
             )}
-            <div className="flex justify-around">
-              <div className="items-center mt-4 top-0 absolute flex justify-center">
-                <Image src={logo} alt="Clover" width={150} height={49.995} />
-              </div>
-              <div className="self-center">
-                <Button
-                  onClick={login}
-                  style={{
-                    fontFamily: "Poppins",
-                  }}
-                  className="!py-4 !px-8 rounded-lg !capitalize !font-semibold !text-xl !text-white !bg-[#1891fe]"
-                >
-                  Authenticate
-                </Button>
-              </div>
-              <div className="self-center">
-                <Button
-                  onClick={() => setOpen(true)}
-                  style={{
-                    fontFamily: "Poppins",
-                  }}
-                  className="!py-4 !px-8 rounded-lg !capitalize !font-semibold !text-xl !text-white !bg-[#1891fe]"
-                >
-                  Register DAO
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       )}
