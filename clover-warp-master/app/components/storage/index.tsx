@@ -324,42 +324,7 @@ const Storage = () => {
                     setTagValue(e.target.value);
                   }}
                 >
-                  <ToggleButton
-                    sx={{
-                      textTransform: "capitalize",
-                      fontWeight: "500",
-                    }}
-                    value="drive"
-                  >
-                    Drive
-                  </ToggleButton>
-                  <ToggleButton
-                    sx={{
-                      textTransform: "capitalize",
-                      fontWeight: "500",
-                    }}
-                    value="pinned"
-                  >
-                    Pinned
-                  </ToggleButton>
-                  <ToggleButton
-                    sx={{
-                      textTransform: "capitalize",
-                      fontWeight: "500",
-                    }}
-                    value="shared"
-                  >
-                    Shared with us
-                  </ToggleButton>
-                  <ToggleButton
-                    sx={{
-                      textTransform: "capitalize",
-                      fontWeight: "500",
-                    }}
-                    value="trash"
-                  >
-                    Trash
-                  </ToggleButton>
+                  
                 </ToggleButtonGroup>
               </div>
               <div className="px-5 h-full">

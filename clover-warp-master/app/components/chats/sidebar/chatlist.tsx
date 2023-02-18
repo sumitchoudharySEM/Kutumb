@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import cicon from "../../../../public/images/icon.png";
 
-const Chatlist = ({name, img, lastMsg, time, selected, onClick}: {name: string, img?: string, lastMsg: string, time?: string | number, selected: boolean, onClick: () => void}) => {
+const Chatlist = ({name, img, lastMsg, time, onClick}: {name: string, img?: string, lastMsg: string, time?: string | number, onClick: () => void}) => {
 
     const getx = (t: number) => {
         const ec:number = Number((new Date().getTime() / 1000).toFixed(0));
@@ -30,25 +30,11 @@ const Chatlist = ({name, img, lastMsg, time, selected, onClick}: {name: string, 
     }
 
   return (
-    <div onClick={onClick} className={`msg ${selected ? "active" : ""}`}>
-      <div className="w-[44px] min-w-[44px] flex items-center justify-center mr-[15px] rounded-[50%] bg-[#e7e7e7] h-[44px]">
-        <Image
-          className="msg-profile "
-          src={img === undefined ? cicon.src : img}
-          height={25}
-          width={25}
-          alt={name}
-        />
-      </div>
-
+    <div onClick={onClick} className={`msg`}>
+      
       <div className="msg-detail w-fit">
         <div className="msg-username capitalize">{name}</div>
-        <div className="msg-content">
-          <span className="msg-message">{lastMsg}</span>
-          {time !== undefined && (
-            <span className="msg-date">{getx(Number(time))}</span>
-          )}
-        </div>
+        
       </div>
     </div>
   );

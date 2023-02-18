@@ -321,7 +321,7 @@ const Chats = () => {
                               }
                             }}
                           >
-                            <ToggleButton
+                            {/* <ToggleButton
                               sx={{
                                 textTransform: "capitalize",
                                 fontWeight: "500",
@@ -329,8 +329,8 @@ const Chats = () => {
                               value={"0"}
                             >
                               Discussion Channel
-                            </ToggleButton>
-                            <ToggleButton
+                            </ToggleButton> */}
+                            {/* <ToggleButton
                               sx={{
                                 textTransform: "capitalize",
                                 fontWeight: "500",
@@ -338,7 +338,7 @@ const Chats = () => {
                               value={"1"}
                             >
                               A new voting campaign
-                            </ToggleButton>
+                            </ToggleButton> */}
                             {contract.toLowerCase() ==
                               "0xacdfc5338390ce4ec5ad61e3dc255c9f2560d797" && (
                               <ToggleButton
@@ -644,105 +644,22 @@ const Chats = () => {
 
           <div className="header">
             <div className="logo">
-              <Link href="/">
-                <a className="text-[#1890FF] cursor-pointer flex pl-4 items-center font-bold text-[18px]">
-                  <Image src={logo} width={100} height={33.33} alt="clover" />
-                </a>
-              </Link>
+              KUTUMB
             </div>
-            <div className="search-bar">
-              {/* <input type="text" placeholder="Search..." /> */}
-            </div>
-            <div className="user-settings">
-              <div className="dark-light">
-                <FiMoon size={24} />
+            <div
+                className={`msg`}
+                onClick={() => {
+                  setGroup("");
+                }}
+              > Storage
               </div>
-              <div className="settings">
-                <FiSettings size={24} />
-              </div>
-              <div className="settings">
-                <FiLogOut
-                  onClick={logout}
-                  className="hover:stroke-[#ff5100] transition-all delay-[400]"
-                  size={24}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="wrapper">
-            <div className="conversation-area cusscroller">
               <div
                 className={`msg`}
                 title="Add More Discussions, voting, airdrop"
                 onClick={() => setAddNew(true)}
               >
-                <div className="w-[44px] min-w-[44px] flex items-center justify-center mr-[15px] rounded-[50%] bg-[#1890FF] h-[44px]">
-                  <BsPlusLg size={19} color="#fff" />
-                </div>
-                <div className="msg-detail w-full">
-                  <div className="msg-username">
-                    Add New Channels/Participants
-                  </div>
-                  <div className="msg-content">
-                    <span className="msg-message">
-                      Add More Discussions, voting, airdrop
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className={`msg ${group === true ? "active" : ""}`}
-                title="Meeting rooms"
-                onClick={() => setGroup(true)}
-              >
-                <div className="w-[44px] min-w-[44px] flex items-center justify-center mr-[15px] rounded-[50%] bg-[#1890FF] h-[44px]">
-                  <MdMeetingRoom size={19} color="#fff" />
-                </div>
-                <div className="msg-detail w-full">
-                  <div className="msg-username">Meeting Rooms</div>
-                  <div className="msg-content">
-                    <span className="msg-message">
-                      Rooms for conferences, meetings
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className={`msg ${Boolean(group) ? "" : "active"}`}
-                onClick={() => {
-                  setGroup("");
-                }}
-              >
-                <div className="w-[44px] min-w-[44px] flex items-center justify-center mr-[15px] rounded-[50%] bg-[#1890FF] h-[44px]">
-                  <FaCloud size={26} color="#fff" />
-                </div>
-                <div className="msg-detail w-full">
-                  <div className="msg-username">DAO Storage</div>
-                  <div className="msg-content">
-                    <LinearProgress
-                      variant="determinate"
-                      sx={{
-                        height: 6,
-                        width: "100%",
-                        borderRadius: "5rem",
-                        backgroundColor: "#D9D9D9",
-                        "& .MuiLinearProgress-bar": {
-                          backgroundColor: "#1890FF",
-                        },
-                      }}
-                      // value={(0.18/150) * 100}
-                      value={10}
-                    />
-
-                    <span className="msg-date font-bold text-[13px] min-w-fit ml-[3px]">
-                      15/150GB
-                    </span>
-                  </div>
-                </div>
-              </div>
-
+                   Addition 
+              </div> 
               {chatlst.map((gps, i) => {
                 const clst =
                   messData[gps]["messages"][
@@ -765,17 +682,23 @@ const Chats = () => {
                     }}
                     time={clst !== undefined ? clst["date"] : undefined}
                     img={cicon.src}
-                    selected={gps == group}
                     lastMsg={clst !== undefined ? clst["content"] : ""}
                     name={`${gps} ${!i ? "(Main)" : ""}`}
                   />
                 );
-              })
-              
-            }
-
-              <div className="overlay"></div>
+              })}  
+            <div className="search-bar">
+             
+              {/* <input type="text" placeholder="Search..." /> */}
             </div>
+            <div className="user-settings">
+              
+              <div className="settings">
+                <button className="btn btn-primary" onClick={logout}>Logout</button>
+              </div>
+            </div>
+          </div>
+          <div className="wrapper">
 
             {group == "" && <Storage />}
 
@@ -785,7 +708,11 @@ const Chats = () => {
               <>
                 <div className="chat-area cusscroller">
                   <div className="chat-area-header">
-                    <div className="chat-area-title capitalize">{group}</div>
+                    <div className="chat-area-title capitalize">{group} <br /><div className="detail-subtitle">
+                      Created by {main.substring(0, 6)}...
+                      {main.substring(38, 42)}
+                    </div></div>
+                    
                     <div className="chat-area-group">
                       <span>{messData[group]["messages"].length}</span>
                     </div>
@@ -842,15 +769,6 @@ const Chats = () => {
                           />
                         </div>
 
-                        <div className="mt-2 mb-3">
-                          <h2 className="text-[22px] text-[#666] text-center font-bold">
-                            Hmm nobody is talking here...
-                          </h2>
-                          <span className="mt-2 text-[17px] text-[#999] flex w-full text-center">
-                            Write something in text field down below and start
-                            the conversation😊
-                          </span>
-                        </div>
                       </div>
                     )}
                   </div>
@@ -950,60 +868,9 @@ const Chats = () => {
                           }}
                           className="feather fill-[#727272] transition-all delay-[400] feather-smile hover:fill-[#ffd900]"
                         />
-
-                        {/* <FiVideo size={24} className="feather transition-all delay-[400] feather-video" />
-                  
-              <FiImage size={24} className="feather transition-all delay-[400] feather-image" />
-
-              <FiPlusCircle size={24} className="feather transition-all delay-[400] feather-plus-circle" />
-
-              <FiPaperclip size={24} className="feather transition-all delay-[400] feather-paperclip" /> */}
+                        
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div className="detail-area cusscroller">
-                  <div className="detail-area-header">
-                    <div className="msg-profile group">
-                      <Image
-                        src={cicon.src}
-                        width={66}
-                        height={66}
-                        alt={group}
-                      />
-                    </div>
-                    <div className="detail-title capitalize">{`${group}`}</div>
-                    <div className="detail-subtitle">
-                      Created by {main.substring(0, 6)}...
-                      {main.substring(38, 42)}
-                    </div>
-                  </div>
-                  <div className="detail-changes">
-                    <input type="text" placeholder="Search in Conversation" />
-                    {/* <div className="detail-change">
-                Change Color
-                <div className="colors">
-                  <div className="color blue selected" data-color="blue"></div>
-                  <div className="color purple" data-color="purple"></div>
-                  <div className="color green" data-color="green"></div>
-                  <div className="color orange" data-color="orange"></div>
-                </div>
-              </div> */}
-                    {/* <div className="detail-change">
-                        Change Emoji
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="feather feather-thumbs-up"
-                        >
-                          <path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3zM7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3" />
-                        </svg>
-                      </div> */}
                   </div>
                 </div>
               </>
