@@ -1226,8 +1226,8 @@ const Home: NextPage = () => {
           ) : null}
 
           <Modal open={open} onClose={handleClose}>
-            <div className="w-screen overflow-y-scroll overflow-x-hidden absolute h-screen flex items-center bg-[#ffffffb0]">
-              <div className="2usm:px-0 mx-auto max-w-[900px] 2usm:w-full relative w-[85%] usm:m-auto min-w-[340px] px-6 my-8 items-center">
+            <div className="w-screen overflow-y-scroll overflow-x-hidden absolute h-screen flex items-center bg-[#ffffff40]">
+              <div className="2usm:px-0 mx-auto max-w-[900px] 2usm:w-full relative w-[85%] usm:m-auto min-w-[340px] px-6 my-8 items-center ">
                 {isLoading && (
                   <Loader
                     sx={{
@@ -1239,7 +1239,7 @@ const Home: NextPage = () => {
                   />
                 )}
 
-                <div className="rounded-lg bg-white shadow-lg shadow-[#cccccc]">
+                <div className="rounded-lg shadow-lg shadow-[#cccccc] modal-dark">
                   <div className="border-b flex justify-between py-[14px] px-[17px] text-xl font-bold">
                     Register DAO
                     <BiX

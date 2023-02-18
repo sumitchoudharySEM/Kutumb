@@ -820,8 +820,11 @@ html {
 .MuiInputBase-input::placeholder {
   color: #fff !important;
 }
-.MuiOutlinedInput-notchedOutline span {
+.MuiTextField-root label {
   color: #fff !important;
+}
+.MuiTextField-root p {
+  color: #fff8 !important;
 }
 .modal-dark {
   background-color: #161b28;
