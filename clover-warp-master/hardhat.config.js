@@ -4,11 +4,14 @@ require("@nomicfoundation/hardhat-toolbox");
 module.exports = {
   solidity: {
     version: "0.8.7",
-     settings: {
-      optimizer: {
-        enabled: true,
-        runs: 200,
+    defaultNetwork: "hyperspace",
+    networks: {
+      hyperspace: {
+          chainId: 3141,
+          url: "https://api.hyperspace.node.glif.io/rpc/v1",
+          accounts: ["1e48afe0bf209bd62fd2651b56896dcf70a145918c7c1ee4f4112edaa46a5bda"],
       },
+
     }
   },
   paths: {
