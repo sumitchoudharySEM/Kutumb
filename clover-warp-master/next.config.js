@@ -26,9 +26,11 @@ const nextConfig = {
 };
 
 module.exports = {
-  images: {
-    loader: "akamai",
-    path: "",
-  },
+  test: /\.jsx?$/,
+    loader: 'babel-loader',
+    exclude: /node_modules/,
+    query: {
+        presets: ['es2015']
+    },
   nextConfig,
 };
