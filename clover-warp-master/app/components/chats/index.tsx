@@ -263,7 +263,7 @@ const Chats = () => {
       {isLoading && <Loader />}
 
       {!isLoading && (
-        <div className="app">
+        <div className="app dark">
           <Modal open={addNew} onClose={() => setAddNew(false)}>
             <div className="w-screen overflow-y-scroll overflow-x-hidden absolute h-screen flex items-center bg-[#ffffffb0]">
               <div className="2usm:px-0 mx-auto max-w-[900px] 2usm:w-full relative w-[85%] usm:m-auto min-w-[340px] px-6 my-8 items-center">
@@ -642,7 +642,7 @@ const Chats = () => {
             </div>
           </Modal>
 
-          <div className="header">
+          <div className="header dark">
             <div className="logo">
               KUTUMB
             </div>
@@ -707,7 +707,7 @@ const Chats = () => {
             {Boolean(group != "" && typeof group == "string") && (
               <>
                 <div className="chat-area cusscroller">
-                  <div className="chat-area-header">
+                  <div className="chat-area-header dark">
                     <div className="chat-area-title capitalize">{group} <br /><div className="detail-subtitle">
                       Created by {main.substring(0, 6)}...
                       {main.substring(38, 42)}
@@ -772,7 +772,7 @@ const Chats = () => {
                       </div>
                     )}
                   </div>
-                  <div className="chat-area-footer">
+                  <div className="chat-area-footer dark">
                     {Boolean(rContext?.sender) && (
                       <div className="flex justify-between items-center w-full">
                         <div className="py-[10px] opacity-[.7] flex flex-col">
@@ -819,6 +819,9 @@ const Chats = () => {
 
                     <div className="flex w-full items-center relative">
                       <TextField
+                        style={{
+                          backgroundColor: "#fff1",
+                        }}
                         type="text"
                         value={messageText}
                         onKeyDown={(e) => {
