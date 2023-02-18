@@ -18,9 +18,10 @@ const Loader = ({
       style={{
         position: fixed ? "fixed" : "absolute",
         justifyContent: text ? "space-around" : "center",
+        backgroundColor: "#161b28",
         ...sx,
       }}
-      className="h-full left-0 bg-white top-0 z-[100] flex flex-col justify-center items-center w-full"
+      className="h-full left-0  top-0 z-[100] flex flex-col justify-center items-center w-full"
     >
       {incLogo && (
         <div className="items-center flex justify-center">

@@ -265,9 +265,9 @@ const Chats = () => {
       {!isLoading && (
         <div className="app dark">
           <Modal open={addNew} onClose={() => setAddNew(false)}>
-            <div className="w-screen overflow-y-scroll overflow-x-hidden absolute h-screen flex items-center bg-[#ffffffb0]">
+            <div className="w-screen overflow-y-scroll overflow-x-hidden absolute h-screen flex items-center bg-[#ffffff40]">
               <div className="2usm:px-0 mx-auto max-w-[900px] 2usm:w-full relative w-[85%] usm:m-auto min-w-[340px] px-6 my-8 items-center">
-                <div className="rounded-lg bg-white shadow-lg shadow-[#cccccc]">
+                <div className="rounded-lg shadow-lg shadow-[#cccccc] modal-dark">
                   <div className="border-b flex justify-between py-[14px] px-[17px] text-xl font-bold">
                     Create New
                     <FiX

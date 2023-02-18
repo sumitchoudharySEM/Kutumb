@@ -816,3 +816,13 @@ html {
 .MuiInputBase-root::placeholder {
   color: #fff !important;
 }
+
+.MuiInputBase-input::placeholder {
+  color: #fff !important;
+}
+.MuiOutlinedInput-notchedOutline span {
+  color: #fff !important;
+}
+.modal-dark {
+  background-color: #161b28;
+}
