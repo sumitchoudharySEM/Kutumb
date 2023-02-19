@@ -8252,3 +8252,36 @@ label {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+.team_members{
+    width:20rem !important;
+    height:20rem !important;
+
+}
+.cs-slider_wrapper{
+    width:100% !important;
+    height:100% !important;
+    max-height: 150vh !important;
+}
+.cs-member_thumb img{
+  width:15rem !important;
+  height:15rem !important;
+}
+.cs-member_thumb, .cs-team, .cs-slide{
+  width:15rem !important;
+  height:15rem !important;
+}
+.cs-slider_wrapper{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cs-member_overlay{
+  z-index: 5;
+  width:15rem !important;
+  height:15rem !important;
+}
+.cs-member_info{
+  z-index: 20 !important;
+}
