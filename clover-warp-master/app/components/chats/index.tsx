@@ -263,13 +263,13 @@ const Chats = () => {
       {isLoading && <Loader />}
 
       {!isLoading && (
-        <div className="app">
+        <div className="app dark">
           <Modal open={addNew} onClose={() => setAddNew(false)}>
-            <div className="w-screen overflow-y-scroll overflow-x-hidden absolute h-screen flex items-center bg-[#ffffffb0]">
+            <div className="w-screen overflow-y-scroll overflow-x-hidden absolute h-screen flex items-center bg-[#ffffff40]">
               <div className="2usm:px-0 mx-auto max-w-[900px] 2usm:w-full relative w-[85%] usm:m-auto min-w-[340px] px-6 my-8 items-center">
-                <div className="rounded-lg bg-white shadow-lg shadow-[#cccccc]">
+                <div className="rounded-lg shadow-lg shadow-[#cccccc] modal-dark">
                   <div className="border-b flex justify-between py-[14px] px-[17px] text-xl font-bold">
-                    Create New
+                    Create
                     <FiX
                       size={20}
                       className="cursor-pointer"
@@ -374,9 +374,9 @@ const Chats = () => {
                           </div>
 
                           <div className="mt-4">
-                            <label className="text-[#808080] mb-2 block">
+                            {/* <label className="text-[#808080] mb-2 block">
                               Add members, click on registered members to add
-                            </label>
+                            </label> */}
 
                             <div className="flex w-full items-center cusscroller flex-nowrap overflow-y-hidden overflow-x-scroll">
                               {participants.map(
@@ -413,7 +413,7 @@ const Chats = () => {
                               )}
                             </div>
                             <span className="text-[14px] block mt-1 text-[#b6b6b6]">
-                              Not selecting any item, selects every item
+                              You can select any channel!
                             </span>
                           </div>
 
@@ -642,7 +642,7 @@ const Chats = () => {
             </div>
           </Modal>
 
-          <div className="header">
+          <div className="header dark">
             <div className="logo">
               KUTUMB
             </div>
@@ -693,9 +693,9 @@ const Chats = () => {
             </div>
             <div className="user-settings">
               
-              <div className="settings">
-                <button className="btn btn-primary" onClick={logout}>Logout</button>
-              </div>
+             
+                <button className="btn btn-primary px-15" onClick={logout}>Logout</button>
+              
             </div>
           </div>
           <div className="wrapper">
@@ -707,13 +707,13 @@ const Chats = () => {
             {Boolean(group != "" && typeof group == "string") && (
               <>
                 <div className="chat-area cusscroller">
-                  <div className="chat-area-header">
+                  <div className="chat-area-header dark">
                     <div className="chat-area-title capitalize">{group} <br /><div className="detail-subtitle">
-                      Created by {main.substring(0, 6)}...
+                      Created : {main.substring(0, 6)}..
                       {main.substring(38, 42)}
                     </div></div>
                     
-                    <div className="chat-area-group">
+                    <div className="">
                       <span>{messData[group]["messages"].length}</span>
                     </div>
                   </div>
@@ -772,7 +772,7 @@ const Chats = () => {
                       </div>
                     )}
                   </div>
-                  <div className="chat-area-footer">
+                  <div className="chat-area-footer dark">
                     {Boolean(rContext?.sender) && (
                       <div className="flex justify-between items-center w-full">
                         <div className="py-[10px] opacity-[.7] flex flex-col">
@@ -819,6 +819,9 @@ const Chats = () => {
 
                     <div className="flex w-full items-center relative">
                       <TextField
+                        style={{
+                          backgroundColor: "#fff1",
+                        }}
                         type="text"
                         value={messageText}
                         onKeyDown={(e) => {
