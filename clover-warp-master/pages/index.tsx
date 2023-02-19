@@ -548,9 +548,9 @@ const Home: NextPage = () => {
                   style={{
                     fontFamily: "Poppins",
                   }}
-                  className="!py-4 !px-8 rounded-lg !capitalize !font-semibold !text-xl !text-white !bg-[#1891fe]"
+                  className="!py-3 !px-6 rounded-lg !capitalize !font-semibold !text-m !text-white !bg-[#0ed1a4]"
                 >
-                  Authenticate
+                  Connect Wallet
                 </Button>
                 </div>
               </div>
@@ -637,7 +637,7 @@ const Home: NextPage = () => {
           <div className="cs-shape_1" />
           <div className="container">
             <div className="cs-hero_text">
-              <h1 className="cs-hero_title wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s"> Creativity In <br />Our Blood Line </h1>
+              <h1 className="cs-hero_title wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.2s"> Creativity In <br />Our Data DAO </h1>
               <div className="cs-hero_info">
                 <div>
                 <Button
@@ -645,27 +645,16 @@ const Home: NextPage = () => {
                   style={{
                     fontFamily: "Poppins",
                   }}
-                  className="!py-4 !px-8 rounded-lg !capitalize !font-semibold !text-xl !text-white !bg-[#1891fe]"
+                  className="!py-4 !px-8 rounded-lg !capitalize !font-semibold !text-m !text-white !bg-[#0ed1a4]"
                 >
-                  Register DAO
+                  Create
                 </Button>
                 </div>
                 <div>
-                  <div className="cs-hero_subtitle"> We deliver best problem solving solution for our client and provide finest finishing product in present and upcoming future. </div>
+                  <div className="cs-hero_subtitle"> Revolutionize your DAO team communication with our multi-channel team communication, seamless file sharing, streamings and more, all in one platform. </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="cs-hero_social_wrap cs-primary_font cs-primary_color">
-            <div className="cs-hero_social_title">Follow Us</div>
-            <ul className="cs-hero_social_links">
-              <li>
-                <a href="#">Behance</a>
-              </li>
-              <li>
-                <a href="#">Twitter</a>
-              </li>
-            </ul>
           </div>
           <a href="#service" className="cs-down_btn" />
         </div>
@@ -680,12 +669,7 @@ const Home: NextPage = () => {
                   <h3 className="cs-section_subtitle">What Can We Do</h3>
                   <h2 className="cs-section_title">Services we can help you with</h2>
                   <div className="cs-height_45 cs-height_lg_20" />
-                  <a href="service.html" className="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                    <span>See All Services</span>
-                    <svg width={26} height={12} viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
-                    </svg>
-                  </a>
+
                 </div>
                 <div className="cs-height_90 cs-height_lg_45" />
               </div>
@@ -699,7 +683,7 @@ const Home: NextPage = () => {
                         <div className="cs-card_overlay" />
                         <div className="cs-card_info">
                           <span className="cs-hover_layer3 cs-accent_bg" />
-                          <h2 className="cs-card_title">UI/UX design</h2>
+                          <h2 className="cs-card_title">Broadcast</h2>
                         </div>
                       </a>
                     </div>
@@ -708,12 +692,12 @@ const Home: NextPage = () => {
                   <div className="col-lg-3 col-sm-6 cs-hidden_mobile" />
                   <div className="col-lg-3 col-sm-6">
                     <div className="cs-hobble">
-                      <a href="service-details.html" className="cs-card cs-style1 cs-hover_layer1">
+                      <a href="" className="cs-card cs-style1 cs-hover_layer1">
                       <Image src={myService2} alt="Service" />
                         <div className="cs-card_overlay" />
                         <div className="cs-card_info">
                           <span className="cs-hover_layer3 cs-accent_bg" />
-                          <h2 className="cs-card_title">React.js Development</h2>
+                          <h2 className="cs-card_title">DAO Storage</h2>
                         </div>
                       </a>
                     </div>
@@ -721,12 +705,12 @@ const Home: NextPage = () => {
                   </div>
                   <div className="col-lg-3 col-sm-6">
                     <div className="cs-hobble">
-                      <a href="service-details.html" className="cs-card cs-style1 cs-hover_layer1">
+                      <a href="" className="cs-card cs-style1 cs-hover_layer1">
                       <Image src={myService3} alt="Service" />
                         <div className="cs-card_overlay" />
                         <div className="cs-card_info">
                           <span className="cs-hover_layer3 cs-accent_bg" />
-                          <h2 className="cs-card_title">Digital Marketing</h2>
+                          <h2 className="cs-card_title">Live Streaming</h2>
                         </div>
                       </a>
                     </div>
@@ -735,12 +719,12 @@ const Home: NextPage = () => {
                   <div className="col-lg-3 col-sm-6 cs-hidden_mobile" />
                   <div className="col-lg-3 col-sm-6">
                     <div className="cs-hobble">
-                      <a href="service-details.html" className="cs-card cs-style1 cs-hover_layer1">
+                      <a href="" className="cs-card cs-style1 cs-hover_layer1">
                       <Image src={myService4} alt="Service" />
                         <div className="cs-card_overlay" />
                         <div className="cs-card_info">
                           <span className="cs-hover_layer3 cs-accent_bg" />
-                          <h2 className="cs-card_title">Technology</h2>
+                          <h2 className="cs-card_title">Goveranance</h2>
                         </div>
                       </a>
                     </div>
@@ -791,9 +775,9 @@ const Home: NextPage = () => {
                       </div>
                       <div className="cs-member_info">
                         <h2 className="cs-member_name">
-                          <a href="team-details.html">Melon Bulgery</a>
+                          <a href="">Divayanshu Urmaliya</a>
                         </h2>
-                        <div className="cs-member_designation">Product Designer</div>
+                        <div className="cs-member_designation">Backend Developer</div>
                       </div>
                     </div>
                   </div>
@@ -806,9 +790,9 @@ const Home: NextPage = () => {
                       </div>
                       <div className="cs-member_info">
                         <h2 className="cs-member_name">
-                          <a href="team-details.html">Olinaz Fushi</a>
+                          <a href="">Sumit Choudhary</a>
                         </h2>
-                        <div className="cs-member_designation">Project Manager</div>
+                        <div className="cs-member_designation">Frontend Devloper</div>
                       </div>
                     </div>
                   </div>
@@ -821,9 +805,9 @@ const Home: NextPage = () => {
                       </div>
                       <div className="cs-member_info">
                         <h2 className="cs-member_name">
-                          <a href="team-details.html">David Elone</a>
+                          <a href="">Harsh Vishwakarma</a>
                         </h2>
-                        <div className="cs-member_designation">React Developer</div>
+                        <div className="cs-member_designation">Frontend Devloper</div>
                       </div>
                     </div>
                   </div>
@@ -836,9 +820,9 @@ const Home: NextPage = () => {
                       </div>
                       <div className="cs-member_info">
                         <h2 className="cs-member_name">
-                          <a href="team-details.html">David Elone</a>
+                          <a href="">Aman Kushwaha</a>
                         </h2>
-                        <div className="cs-member_designation">React Developer</div>
+                        <div className="cs-member_designation">Backend Developer</div>
                       </div>
                     </div>
                   </div>
@@ -851,9 +835,9 @@ const Home: NextPage = () => {
                       </div>
                       <div className="cs-member_info">
                         <h2 className="cs-member_name">
-                          <a href="team-details.html">David Elone</a>
+                          <a href="">Ankur gupta</a>
                         </h2>
-                        <div className="cs-member_designation">React Developer</div>
+                        <div className="cs-member_designation">Backend Developer</div>
                       </div>
                     </div>
                   </div>
@@ -889,12 +873,7 @@ const Home: NextPage = () => {
               <div className="cs-cta_in">
                 <h2 className="cs-cta_title cs-semi_bold cs-m0"> Let’s disscuse make <br />something <i>cool</i> together </h2>
                 <div className="cs-height_70 cs-height_lg_30" />
-                <a href="contact.html" className="cs-text_btn wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                  <span>Let's Meet Here</span>
-                  <svg width={26} height={12} viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z" fill="currentColor" />
-                  </svg>
-                </a>
+                
               </div>
             </div>
           </div>
