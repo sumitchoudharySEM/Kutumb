@@ -30,6 +30,7 @@ import myService4 from '../app/assets/img/service_4.jpeg';
 import my_img from '../app/team/meri_photo.png';
 import divyanshu from '../app/team/divyanshu.jpg';
 import harsh_sir from '../app/team/harsh_sir.png';
+import ku_logo from '../app/team/kutumbh_logo.png';
 
 // 0x74367351f1a6809ced9cc70654c6bf8c2d1913c9;
 const contractAddress: string = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
@@ -521,8 +522,8 @@ const Home: NextPage = () => {
             <div className="container">
               <div className="cs-main_header_in">
                 <div className="cs-main_header_left">
-                  <a className="cs-site_branding" href="index.html">
-                    <img src="assets/img/logo.svg" alt="Logo" />
+                  <a className="cs-site_branding" href="">
+                    <Image src={ku_logo} alt="Logo" />
                   </a>
                 </div>
                 <div className="cs-main_header_center">
