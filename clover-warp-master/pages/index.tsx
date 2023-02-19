@@ -338,7 +338,7 @@ const Home: NextPage = () => {
 
           }
         
-          const signedHash = await signMessageAsync({ message: 'Welcome back to clover' });
+          const signedHash = await signMessageAsync({ message: 'Welcome back to Kutumb' });
 
 
             console.log('connected');
@@ -351,7 +351,7 @@ const Home: NextPage = () => {
             
             
         const validateAddress = ethers.utils.verifyMessage(
-          "Welcome back to clover",
+          "Welcome back to Kutumb",
           signedHash
         );
 
@@ -523,7 +523,7 @@ const Home: NextPage = () => {
                 </div>
                 <div className="cs-main_header_center">
                   <div className="cs-nav cs-primary_font cs-medium">
-                    <ul className="cs-nav_list">
+                    {/* <ul className="cs-nav_list">
                       <li>
                         <a href="index.html">Home</a>
                       </li>
@@ -534,7 +534,7 @@ const Home: NextPage = () => {
                       <a href="contact.html">Contact</a>
                       </li>
                       
-                    </ul>
+                    </ul> */}
                   </div>
                 </div>
                 <div className="cs-main_header_right">
@@ -974,137 +974,12 @@ const Home: NextPage = () => {
         {/* End Team Section */}
         <div className="cs-height_150 cs-height_lg_80" />
         
-        {/* Start Blog Section */}
-        <section className="cs-shape_wrap_4 cs-parallax">
-          <div className="cs-shape_4 cs-to_up" />
-          <div className="cs-shape_4 cs-to_right" />
-          <div className="cs-height_150 cs-height_lg_80" />
-          <div className="container">
-            <div className="cs-slider cs-style1 cs-gap-24">
-              <div className="cs-slider_left">
-                <div className="cs-section_heading cs-style1">
-                  <h3 className="cs-section_subtitle">Our Blog</h3>
-                  <h2 className="cs-section_title">Explore recent publication</h2>
-                  <div className="cs-height_45 cs-height_lg_20" />
-                  <a href="blog.html" className="cs-text_btn wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                    <span>View More Blog</span>
-                    <svg width={26} height={12} viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M25.5303 6.53033C25.8232 6.23744 25.8232 5.76256 25.5303 5.46967L20.7574 0.696699C20.4645 0.403806 19.9896 0.403806 19.6967 0.696699C19.4038 0.989593 19.4038 1.46447 19.6967 1.75736L23.9393 6L19.6967 10.2426C19.4038 10.5355 19.4038 11.0104 19.6967 11.3033C19.9896 11.5962 20.4645 11.5962 20.7574 11.3033L25.5303 6.53033ZM0 6.75H25V5.25H0V6.75Z" fill="currentColor" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div className="cs-slider_right">
-                <div className="cs-post_wrap">
-                  <div className="cs-slider_container" data-autoplay={1} data-loop={1} data-speed={1000} data-center={0} data-variable-width={1} data-slides-per-view="responsive" data-xs-slides={1} data-sm-slides={2} data-md-slides={2} data-lg-slides={2} data-add-slides={3}>
-                    <div className="cs-slider_wrapper">
-                      <div className="cs-slide">
-                        <div className="cs-post cs-style1">
-                          <a href="blog-details.html" className="cs-post_thumb">
-                            <img src="assets/img/post_1.jpeg" alt="Post" />
-                            <div className="cs-post_overlay" />
-                          </a>
-                          <div className="cs-post_info">
-                            <div className="cs-posted_by">07 Mar 2022</div>
-                            <h2 className="cs-post_title">
-                              <a href="blog-details.html">How to keep fear from ruining your art business with confident</a>
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                      {/* .cs-slide */}
-                      <div className="cs-slide">
-                        <div className="cs-post cs-style1">
-                          <a href="blog-details.html" className="cs-post_thumb">
-                            <img src="assets/img/post_2.jpeg" alt="Post" />
-                            <div className="cs-post_overlay" />
-                          </a>
-                          <div className="cs-post_info">
-                            <div className="cs-posted_by">10 Feb 2022</div>
-                            <h2 className="cs-post_title">
-                              <a href="blog-details.html">Artistic mind will be great for creation anything</a>
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                      {/* .cs-slide */}
-                      <div className="cs-slide">
-                        <div className="cs-post cs-style1">
-                          <a href="blog-details.html" className="cs-post_thumb">
-                            <img src="assets/img/post_3.jpeg" alt="Post" />
-                            <div className="cs-post_overlay" />
-                          </a>
-                          <div className="cs-post_info">
-                            <div className="cs-posted_by">05 Apr 2022</div>
-                            <h2 className="cs-post_title">
-                              <a href="blog-details.html">A.I will take over all job for human within next year</a>
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                      {/* .cs-slide */}
-                      <div className="cs-slide">
-                        <div className="cs-post cs-style1">
-                          <a href="blog-details.html" className="cs-post_thumb">
-                            <img src="assets/img/post_1.jpeg" alt="Post" />
-                            <div className="cs-post_overlay" />
-                          </a>
-                          <div className="cs-post_info">
-                            <div className="cs-posted_by">07 Mar 2022</div>
-                            <h2 className="cs-post_title">
-                              <a href="blog-details.html">How to keep fear from ruining your art business with confident</a>
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                      {/* .cs-slide */}
-                      <div className="cs-slide">
-                        <div className="cs-post cs-style1">
-                          <a href="blog-details.html" className="cs-post_thumb">
-                            <img src="assets/img/post_2.jpeg" alt="Post" />
-                            <div className="cs-post_overlay" />
-                          </a>
-                          <div className="cs-post_info">
-                            <div className="cs-posted_by">10 Feb 2022</div>
-                            <h2 className="cs-post_title">
-                              <a href="blog-details.html">Artistic mind will be great for creation anything</a>
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                      {/* .cs-slide */}
-                      <div className="cs-slide">
-                        <div className="cs-post cs-style1">
-                          <a href="blog-details.html" className="cs-post_thumb">
-                            <img src="assets/img/post_3.jpeg" alt="Post" />
-                            <div className="cs-post_overlay" />
-                          </a>
-                          <div className="cs-post_info">
-                            <div className="cs-posted_by">05 Apr 2022</div>
-                            <h2 className="cs-post_title">
-                              <a href="blog-details.html">A.I will take over all job for human within next year</a>
-                            </h2>
-                          </div>
-                        </div>
-                      </div>
-                      {/* .cs-slide */}
-                    </div>
-                  </div>
-                  {/* .cs-slider_container */}
-                  <div className="cs-pagination cs-style1 cs-hidden_desktop" />
-                </div>
-              </div>
-            </div>
-            {/* .cs-slider */}
-          </div>
-          <div className="cs-height_125 cs-height_lg_70" />
-        </section>
-        {/* End Blog Section */}
+        
         {/* End Moving Text */}
         <div className="cs-moving_text_wrap cs-bold cs-primary_font">
           <div className="cs-moving_text_in">
-            <div className="cs-moving_text">Our reputed world wide partners</div>
-            <div className="cs-moving_text">Our reputed world wide partners</div>
+            <div className="cs-moving_text">Secure transactions with our trusted network</div>
+            {/* <div className="cs-moving_text">Secure transactions with our trusted network</div> */}
           </div>
         </div>
         
@@ -1120,7 +995,7 @@ const Home: NextPage = () => {
                 <h2 className="cs-cta_title cs-semi_bold cs-m0"> Let’s disscuse make <br />something <i>cool</i> together </h2>
                 <div className="cs-height_70 cs-height_lg_30" />
                 <a href="contact.html" className="cs-text_btn wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
-                  <span>Apply For Meeting</span>
+                  <span>Let's Meet Here</span>
                   <svg width={26} height={12} viewBox="0 0 26 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M25.5307 6.53033C25.8236 6.23744 25.8236 5.76256 25.5307 5.46967L20.7577 0.696699C20.4648 0.403806 19.99 0.403806 19.6971 0.696699C19.4042 0.989593 19.4042 1.46447 19.6971 1.75736L23.9397 6L19.6971 10.2426C19.4042 10.5355 19.4042 11.0104 19.6971 11.3033C19.99 11.5962 20.4648 11.5962 20.7577 11.3033L25.5307 6.53033ZM0.000366211 6.75H25.0004V5.25H0.000366211V6.75Z" fill="currentColor" />
                   </svg>
@@ -1130,11 +1005,7 @@ const Home: NextPage = () => {
           </div>
         </section>
         {/* End CTA */}
-        <span className="cs-scrollup">
-          <svg width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 10L1.7625 11.7625L8.75 4.7875V20H11.25V4.7875L18.225 11.775L20 10L10 0L0 10Z" fill="currentColor" />
-          </svg>
-        </span>
+        
         
         {/* Script */}
       </div>
@@ -1144,9 +1015,8 @@ const Home: NextPage = () => {
       {!bigLoader && (
         <div className={styles.container}>
           <Head>
-            <title>Clover</title>
-            <meta name="description" content="Chat as a DAO" />
-            <link rel="icon" href="/favicon.ico" />
+            <title>Kutumb</title>
+            
           </Head>
 
           {showModal ? (
@@ -1226,8 +1096,8 @@ const Home: NextPage = () => {
           ) : null}
 
           <Modal open={open} onClose={handleClose}>
-            <div className="w-screen overflow-y-scroll overflow-x-hidden absolute h-screen flex items-center bg-[#ffffffb0]">
-              <div className="2usm:px-0 mx-auto max-w-[900px] 2usm:w-full relative w-[85%] usm:m-auto min-w-[340px] px-6 my-8 items-center">
+            <div className="w-screen overflow-y-scroll overflow-x-hidden absolute h-screen flex items-center bg-[#ffffff40]">
+              <div className="2usm:px-0 mx-auto max-w-[900px] 2usm:w-full relative w-[85%] usm:m-auto min-w-[340px] px-6 my-8 items-center ">
                 {isLoading && (
                   <Loader
                     sx={{
@@ -1239,7 +1109,7 @@ const Home: NextPage = () => {
                   />
                 )}
 
-                <div className="rounded-lg bg-white shadow-lg shadow-[#cccccc]">
+                <div className="rounded-lg shadow-lg shadow-[#cccccc] modal-dark">
                   <div className="border-b flex justify-between py-[14px] px-[17px] text-xl font-bold">
                     Register DAO
                     <BiX
