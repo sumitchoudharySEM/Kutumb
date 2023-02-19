@@ -50,3 +50,4 @@ coverage.json
 typechain
 typechain-types
 
+yarn.lock

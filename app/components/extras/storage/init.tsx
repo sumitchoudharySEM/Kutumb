@@ -16,6 +16,38 @@ export interface mess {
   }[];
 }
 
+const PK = '8f8f7576ca1997c78400a54d381044736440551ba983c17ef97700988533077d'; 
+const Pkey = `0x${PK}`;
+const signer = new ethers.Wallet(Pkey);
+
+export const sendNotification = async({message}:{message: string}) => {
+  try {
+    const apiResponse = await PushAPI.payloads.sendNotification({
+      signer,
+      type: 3, // target
+      identityType: 2, // direct payload
+      notification: {
+        title: `Chat from Kutumb`,
+        body: message
+      },
+      payload: {
+        title: `Chat from Kutumb`,
+        body: message,
+        cta: '',
+        img: ''
+      },
+      recipients: 'eip155:5:0xEe9e22b3C8c22C0E62BD2fa5a1c78992D00be672', // recipient address
+      channel: 'eip155:5:0x437Bf213B90C5a0e92bD9D2C4BD8B26851004120', // your channel address
+      env: 'staging'
+    });
+    
+    // apiResponse?.status === 204, if sent successfully!
+    console.log('API repsonse: ', apiResponse);
+  } catch (err) {
+    console.error('Error: ', err);
+  }
+}
+
 
 export const notifications = async ({ title, message, receivers, exclude }: { title: string, message: string, receivers: string[], exclude: string }) => {
 
@@ -24,6 +56,8 @@ export const notifications = async ({ title, message, receivers, exclude }: { ti
    const pkey = `0x${pk}`;
 
    const signer = new ethers.Wallet("df57089febbacf7ba0bc227dafbffa9fc08a93fdc68e1e42411a14efcf23656e");
+
+   
 
    const channel = `eip155:5:${process.env.NEXT_PUBLIC_PUBLIC_KEY}`;
 
