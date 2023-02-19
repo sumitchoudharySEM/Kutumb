@@ -27,6 +27,10 @@ import myService2 from '../app/assets/img/service_2.jpeg';
 import myService3 from '../app/assets/img/service_3.jpeg';
 import myService4 from '../app/assets/img/service_4.jpeg';
 
+import my_img from '../app/team/meri_photo.png';
+import divyanshu from '../app/team/divyanshu.jpg';
+import harsh_sir from '../app/team/harsh_sir.png';
+
 // 0x74367351f1a6809ced9cc70654c6bf8c2d1913c9;
 const contractAddress: string = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
 const abi:any = contract.abi;
@@ -781,7 +785,7 @@ const Home: NextPage = () => {
                   <div className="cs-slide">
                     <div className="cs-team cs-style1">
                       <div className="cs-member_thumb">
-                        <img src="assets/img/member_1.jpeg" alt="Member" />
+                      <Image className='team_members' src={divyanshu} alt="Member" />
                         <div className="cs-member_overlay" />
                       </div>
                       <div className="cs-member_info">
@@ -818,7 +822,7 @@ const Home: NextPage = () => {
                   <div className="cs-slide">
                     <div className="cs-team cs-style1">
                       <div className="cs-member_thumb">
-                        <img src="assets/img/member_2.jpeg" alt="Member" />
+                        <Image className='team_members' src={my_img} alt="Member" />
                         <div className="cs-member_overlay" />
                       </div>
                       <div className="cs-member_info">
@@ -855,7 +859,7 @@ const Home: NextPage = () => {
                   <div className="cs-slide">
                     <div className="cs-team cs-style1">
                       <div className="cs-member_thumb">
-                        <img src="assets/img/member_3.jpeg" alt="Member" />
+                        <Image className='team_members' src={harsh_sir} alt="Member" />
                         <div className="cs-member_overlay" />
                       </div>
                       <div className="cs-member_info">

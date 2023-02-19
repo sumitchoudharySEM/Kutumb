@@ -7663,19 +7663,19 @@ label {
 }
 
 @media screen and (max-width: 767px) {
-  .cs-funfacts {
+  /* .cs-funfacts {
     grid-gap: 15px 15px;
     -ms-grid-columns: (1fr) [1];
     grid-template-columns: repeat(1, 1fr);
-  }
+  } */
 }
 
 @media screen and (max-width: 575px) {
-  .cs-funfacts {
+  /* .cs-funfacts {
     grid-gap: 15px 15px;
     -ms-grid-columns: (1fr) [1];
     grid-template-columns: repeat(1, 1fr);
-  }
+  } */
   .cs-funfact_wrap,
   .cs-funfact_wrap_2 {
     padding: 40px 30px;
