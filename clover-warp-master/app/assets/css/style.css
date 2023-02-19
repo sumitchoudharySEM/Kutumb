@@ -1469,6 +1469,7 @@ label {
   padding: 0 6px;
   -webkit-animation: slide-left 20s linear infinite;
   animation: slide-left 20s linear infinite;
+  overflow-y: hidden;
 }
 
 .cs-moving_text > * {

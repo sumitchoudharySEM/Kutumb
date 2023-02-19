@@ -978,7 +978,7 @@ const Home: NextPage = () => {
         {/* End Moving Text */}
         <div className="cs-moving_text_wrap cs-bold cs-primary_font">
           <div className="cs-moving_text_in">
-            <div className="cs-moving_text">Secure transactions with our trusted network</div>
+            <div className="cs-moving_text" >Secure transactions with our trusted network</div>
             {/* <div className="cs-moving_text">Secure transactions with our trusted network</div> */}
           </div>
         </div>
@@ -1261,13 +1261,13 @@ const Home: NextPage = () => {
             </div>
           </Modal>
 
-          <div className="h-screen flex flex-col justify-center">
+          {/* <div className="h-screen flex flex-col justify-center">
             {Boolean(loginError.length) && (
               <Alert className="my-2" severity="error">
                 {loginError}
               </Alert>
             )}
-          </div>
+          </div> */}
         </div>
       )}
     </>
