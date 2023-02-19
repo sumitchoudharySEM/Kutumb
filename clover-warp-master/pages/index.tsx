@@ -338,7 +338,7 @@ const Home: NextPage = () => {
 
           }
         
-          const signedHash = await signMessageAsync({ message: 'Welcome back to clover' });
+          const signedHash = await signMessageAsync({ message: 'Welcome back to Kutumb' });
 
 
             console.log('connected');
@@ -351,7 +351,7 @@ const Home: NextPage = () => {
             
             
         const validateAddress = ethers.utils.verifyMessage(
-          "Welcome back to clover",
+          "Welcome back to Kutumb",
           signedHash
         );
 

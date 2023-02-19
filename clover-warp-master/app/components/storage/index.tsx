@@ -341,24 +341,7 @@ const Storage = () => {
                         alignItems: "center",
                       }}
                     >
-                      <div className="h-[259px] justify-center w-full my-5 flex">
-                        <Image
-                          src={empty}
-                          className="mb-3"
-                          width={350}
-                          height={259}
-                          alt="No files yet"
-                        />
-                      </div>
-
-                      <div className="mt-2 mb-3">
-                        <h2 className="text-[22px] text-center font-bold">
-                          Drop files here
-                        </h2>
-                        <span className="mt-2 text-[17px] flex w-full text-center">
-                          or use the `{<FaPlus size={17} />}` button
-                        </span>
-                      </div>
+                
                     </div>
                   )}
 

@@ -18,7 +18,7 @@ const Discuss = () => {
     return (
       <>
         <Head>
-          <title> Discuss with DAO Members | Clover</title>
+          <title> Chat </title>
         </Head>
         
         <CCprovider>

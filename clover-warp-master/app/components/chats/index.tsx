@@ -269,7 +269,7 @@ const Chats = () => {
               <div className="2usm:px-0 mx-auto max-w-[900px] 2usm:w-full relative w-[85%] usm:m-auto min-w-[340px] px-6 my-8 items-center">
                 <div className="rounded-lg shadow-lg shadow-[#cccccc] modal-dark">
                   <div className="border-b flex justify-between py-[14px] px-[17px] text-xl font-bold">
-                    Create New
+                    Create
                     <FiX
                       size={20}
                       className="cursor-pointer"
@@ -374,9 +374,9 @@ const Chats = () => {
                           </div>
 
                           <div className="mt-4">
-                            <label className="text-[#808080] mb-2 block">
+                            {/* <label className="text-[#808080] mb-2 block">
                               Add members, click on registered members to add
-                            </label>
+                            </label> */}
 
                             <div className="flex w-full items-center cusscroller flex-nowrap overflow-y-hidden overflow-x-scroll">
                               {participants.map(
@@ -413,7 +413,7 @@ const Chats = () => {
                               )}
                             </div>
                             <span className="text-[14px] block mt-1 text-[#b6b6b6]">
-                              Not selecting any item, selects every item
+                              You can select any channel!
                             </span>
                           </div>
 
@@ -693,9 +693,9 @@ const Chats = () => {
             </div>
             <div className="user-settings">
               
-              <div className="settings">
-                <button className="btn btn-primary" onClick={logout}>Logout</button>
-              </div>
+             
+                <button className="btn btn-primary px-15" onClick={logout}>Logout</button>
+              
             </div>
           </div>
           <div className="wrapper">
@@ -709,11 +709,11 @@ const Chats = () => {
                 <div className="chat-area cusscroller">
                   <div className="chat-area-header dark">
                     <div className="chat-area-title capitalize">{group} <br /><div className="detail-subtitle">
-                      Created by {main.substring(0, 6)}...
+                      Created : {main.substring(0, 6)}..
                       {main.substring(38, 42)}
                     </div></div>
                     
-                    <div className="chat-area-group">
+                    <div className="">
                       <span>{messData[group]["messages"].length}</span>
                     </div>
                   </div>

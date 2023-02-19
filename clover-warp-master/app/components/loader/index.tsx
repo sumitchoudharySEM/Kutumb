@@ -25,7 +25,7 @@ const Loader = ({
     >
       {incLogo && (
         <div className="items-center flex justify-center">
-          <Image src={logo} alt="Clover" width={150} height={49.995} />
+          {/* <Image src={logo} alt="Clover" width={150} height={49.995} /> */}
         </div>
       )}
       <Box

@@ -33,12 +33,12 @@ const Text = ({ content, sender, date, key, reply, sent, enlargen }: Textm) => {
 
   const ddate =
     parseMdat == parseCdat
-      ? `${(exp.getHours() + 1) % 12 || exp.getHours() + 1}.${
+      ? `${(exp.getHours() + 1) % 12 || exp.getHours() + 1} : ${
           exp.getMinutes() + 1
-        }${exp.getHours() > 12 ? "pm" : "am"}`
+        }${exp.getHours() > 12 ? "PM" : "AM"}`
       : `${exp.getFullYear()}/${exp.getMonth() + 1}/${exp.getDate()} ${
           (exp.getHours() + 1) % 12 || exp.getHours() + 1
-        }.${exp.getMinutes() + 1}${exp.getHours() > 12 ? "pm" : "am"}`;
+        }.${exp.getMinutes() + 1}${exp.getHours() > 12 ? "PM" : "AM"}`;
 
   return (
     <div
@@ -46,55 +46,52 @@ const Text = ({ content, sender, date, key, reply, sent, enlargen }: Textm) => {
         opacity: sent ? 1 : 0.3,
       }}
       key={key}
-      className={`chat-msg transition-all delay-[400] ${
+      className={`chat-msg  transition-all delay-[400] ${
         address == sender ? "owner" : ""
       }`}
     >
       <div className="chat-msg-profile">
-        <img className="chat-msg-img" src={userx.src} alt={sender} />
+        <img className="chat-msg-img" src="https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?size=338&ext=jpg&ga=GA1.2.342998088.1653508640&semt=ais" alt={sender} />
 
         <div className="chat-msg-date">
-          {`${sender.substring(0, 6)}...${sender.substring(38, 42)}`}{" "}
+          {`${sender.substring(0, 3)}..${sender.substring(39, 42)}`}{" "}
           <span>{ddate}</span>
         </div>
       </div>
-      <div className="chat-msg-content">
-        {content.map((txt: string[], i: number) => (
-          <>
-            {Boolean(txt[1]) && (
-              <div className="chat-msg-text reply">
-                <span>{`Replied to ${
-                  reply == address
-                    ? "self"
-                    : `${sender.substring(0, 6)}....${sender.substring(38, 42)}`
-                }`}</span>
-                <span>{txt[1]}</span>
-              </div>
-            )}
+      <div className=" shadow-lg rounded-md">
+  {content.map((txt: string[], i: number) => (
+    <>
+      {Boolean(txt[1]) && (
+        <div className="chat-msg-text bg-[gray]  reply border-l-2 border-white pl-2">
+          <span>{`Replied to ${
+            reply == address
+              ? "self"
+              : `${sender.substring(0, 3)}..${sender.substring(39, 42)}`
+          }`}</span>
+          <span>{txt[1]}</span>
+        </div>
+      )}
 
-            <div
-              key={i}
-              onClick={(e: any) => {
-                if (!(e.detail % 2)) {
-                  if (mCon.update !== undefined) {
-                    mCon.update({
-                      content: txt[0],
-                      sender,
-                    });
-                  }
-                }
-              }}
-              style={{
-                fontSize: enlargen ? "50px" : undefined,
-                padding: enlargen ? "5px" : undefined,
-              }}
-              className="chat-msg-text"
-            >
-              {txt[0]}
-            </div>
-          </>
-        ))}
+      <div
+        key={i}
+        onClick={(e: any) => {
+          if (!(e.detail % 2)) {
+            if (mCon.update !== undefined) {
+              mCon.update({
+                content: txt[0],
+                sender,
+              });
+            }
+          }
+        }}
+        className={`chat-msg-text ${enlargen ? "text-4xl p-5" : ""}`}
+      >
+        {txt[0]}
       </div>
+    </>
+  ))}
+</div>
+
     </div>
   );
 };

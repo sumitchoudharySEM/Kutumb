@@ -454,9 +454,10 @@ html {
 }
 
 .owner .chat-msg-text {
-  background-color: var(--theme-color);
+  background-color: #6387a7;
   color: #fff;
-  border-radius: 16px;
+  border-radius: 24px;
+  border-end-end-radius: 2px;
 }
 
 .owner .chat-msg-content div:last-child {
