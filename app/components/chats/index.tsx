@@ -4,6 +4,8 @@ import Link from "next/link";
 import Router from "next/router";
 import logo from "../../../public/images/logo.png";
 import Select from "react-select";
+import { sendNotification } from "../extras/storage/init";
+
 import { BsFolder, BsPlusLg } from "react-icons/bs";
 import {
   FiImage,
@@ -831,8 +833,9 @@ const Chats = () => {
                           ) {
                             e.preventDefault();
                             moveMessage(enlargen == 1);
-
+                            sendNotification({message: messageText});
                             setEnlargen(0);
+
                             setMessageText("");
                           } else {
                             setEnlargen(0);
